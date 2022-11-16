@@ -11,6 +11,6 @@ WORKDIR /time_series
 
 RUN pip install nsetools fastapi uvicorn pandas numpy requests
 
-RUN uvicorn main:app --reload --host 0.0.0.0 --port 8000
+RUN uvicorn daily_data:app --reload --host 0.0.0.0 --port 8000
 
 CMD [ "python","script.py" ]
