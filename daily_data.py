@@ -2,7 +2,7 @@ import nsetools
 import os
 import smtplib
 import schedule
-import fastapi
+import fastapi 
 
 app=fastapi.FastAPI()
 nse=nsetools.Nse()
