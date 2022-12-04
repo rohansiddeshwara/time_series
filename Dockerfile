@@ -13,5 +13,5 @@ RUN pip install nsetools fastapi uvicorn pandas numpy requests schedule
 
 EXPOSE 8000
 
-CMD ["uvicorn", "daily_data:app","--host","0.0.0.0", "--reload" ]
+CMD ["uvicorn", "daily_data:app", "--reload","--port","8000" ]
  

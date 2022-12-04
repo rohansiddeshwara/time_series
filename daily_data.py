@@ -2,16 +2,15 @@ import nsetools
 import os
 import smtplib
 import schedule
-import fastapi 
+import fastapi
 
 app=fastapi.FastAPI()
 nse=nsetools.Nse()
 
 @app.get("/")
-def daily_data():
+def get_data():
     data=nse.get_quote("SBIN")
     return data
-
 
 
 
