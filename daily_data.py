@@ -5,11 +5,12 @@ import schedule
 import fastapi
 
 app=fastapi.FastAPI()
-nse=nsetools.Nse()
+
 
 @app.get("/")
 def get_data():
-    data=nse.get_quote("SBIN")
+    nse=nsetools.Nse()
+    data=nse.get_quote("INFY")
     return data
 
 
